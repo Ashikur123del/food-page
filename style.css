@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffeac0;
+    margin: 0 100px;
+    font-family: "Poppins", sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.nav .logo h1{
+    font-size: 35px;
+    font-weight: 600px;
+    color: #000000;
+
+}
+.nav .logo b{
+    color: #ff511c;
+}
+
+.nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav ul li{
+    margin-right: 30px;
+}
+
+
+.nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600px;
+    color: #000000;
+}
+
+.nav ul li a:hover{
+    color: #ff511c;
+}
+
+input{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600px;
+    font-size: 15px;
+}
+
+.singin{
+    border: none;
+    background: transparent;
+}
+.singup{
+    background-color: #ff511c;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 2px;
+}
+
+
+.content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    grid:30px;
+    margin-top: 110px;
+}
+
+.content .content-lift{
+    display: block;
+    width: 100%;
+}
+.content .content-lift .info{
+    display: flex;
+    flex-direction: column;
+   max-width: 100%;
+}
+
+.content .content-lift .info h2{
+    font-size: 60px;
+    font-weight: 600px;
+    margin-bottom: 30px;
+}
+
+.content .content-lift .info p{
+    font-size: 20px;
+   line-height: 35px;
+   margin-bottom: 30px;
+}
+
+.content .content-lift .btn{
+    padding: 10px 23px;
+    background-color: #ff511c;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.content .content-right{
+    width: 100%;
+    display: block;
+}
+
+.content .content-right img{
+    width: 400px;
+    height: auto;
+    position: relative;
+    animation: rotate 8s linear infinite;
+   height: 400px;
+   border-radius: 50%;
+   user-select: none;
+   border: 5px solid rgb(185, 155, 155);
+  
+}
+
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.card-conatiner{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.card-conatiner .list-item{
+    width: 90%;
+    position: relative;
+    margin-top: 50px;
+}
+
+.card-conatiner .list-item h3{
+    font-size: 20px;
+    font-weight: 600px;
+    margin-bottom: 70px;
+}
+.card-conatiner .cart-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.card-conatiner .cart-img{
+    width: 250px;
+    height: auto;
+    outline: 2px solid #ffaa96;
+    padding: 10px;
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.card-conatiner .cart-list .cart-img img {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	box-shadow: 0px 20px 20px #ffaa96;
+	object-fit: cover;
+	object-position: center;
+	background-repeat: no-repeat;
+	bottom: 266px;
+	left: 81px;
+	border-radius: 50%;
+}
+
+.card-conatiner .cart-list .cart-img .food-titel{
+    padding: 40px 0 10px;
+}
+
+.card-conatiner .cart-list .cart-img .food-titel h1{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    
+    
+}
+
+.card-conatiner .cart-img .desc-titel p{
+     text-align: center;
+     margin-bottom: 30px;
+     
+} 
+
+
+.card-conatiner .cart-img .price{
+    position: relative;
+}
+
+.card-conatiner .cart-img .price .boxe{
+    position: absolute;
+    top: 0;
+    left: 210px;
+    font-size: 20px;
+    color: #ff511c;
+
+}
+
+
+
